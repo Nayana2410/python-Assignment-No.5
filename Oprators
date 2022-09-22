@@ -1,0 +1,55 @@
+#Assignment No.5
+#Operators
+#1. Write a python script to remove the last digit from a given number. (for example, if user enters 2534 then your output should be 253)
+n=int(input("Enter a number"))
+num=n//10
+print(num)
+#2. Write a python script to get the last digit from a given number. (for example, if user enters 2089 then your output should be 9)
+n=int(input("Enter a number"))
+print('Last diigit is:',n%10)
+#3. Write a python script to swap data of two variables
+
+num1=int(input("Enter a num1:"))
+num2=int(input("Enter a num2:"))
+num1,num2=num2,num1
+print("New value of a num1:")
+print(num1)
+print("New value of a num2:")
+print(num2)
+
+#4. Write a python script to find x power y, where values of x and y are given by user
+num=int(input("Enter a number:"))
+power=int(input("Enter a number:"))
+ans=num**power
+print(ans)
+#5. Write a python script which takes a three digit number from the user and displays only its first digit.
+n=int(input("Enter a three digit number"))
+print('first diigit is:',n//100)
+#6. Write a python script which takes a three digit number from the user and displays only its middle digit.
+n=int(input("Enter a three digit number"))
+n=int(n/100)
+ans=n%10
+print(n)
+
+#7. Write a python script which takes a three digit number from the user and displays only its last digit.
+number = int(input("enter your number"))
+number = int(number%10)
+print(number)
+#8. Write a python script to use IN operator to display the data present in the list
+l1=[1,2,3,4,5,6,7,8,9,10]
+
+number = int(input("enter your number"))
+print(number in l1)
+#9. Write a python script to use NOT IN operator to display the data not present in list
+l1=[1,2,3,4,5,6,7,8,9,10]
+
+number = int(input("enter your number"))
+print(number not in l1)
+#10. Write a python script to use IS operator to display if both variables are the same object or not?
+l1 = [1,2,3,4,5,6]
+l2 = [1,2,3,4,5,6]
+
+result_1 = l1 is l2
+result_2 = l1 is not l2
+print(result_1)
+print(result_2)
